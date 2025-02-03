@@ -6,13 +6,20 @@
 import SwiftUI
 
 extension EdgeInsets {
-    
+
+    /// Convenience init to set `0` on all sides.
     static var zero: Self { .init(top: 0, leading: 0, bottom: 0, trailing: 0) }
-    
+
+    /// Convenience init to set same value on all sides.
+    /// - Parameter value: Value for top, leading, bottom, trailing
     init(_ value: CGFloat) {
         self.init(top: value, leading: value, bottom: value, trailing: value)
     }
-    
+
+    /// Convenience init to set values for top/bottom and leading/trailing.
+    /// - Parameters:
+    ///   - horizontal: Value for leading and trailing
+    ///   - vertical: Value for top and bottom
     init(horizontal: CGFloat, vertical: CGFloat) {
         self.init(top: vertical, leading: horizontal, bottom: vertical, trailing: horizontal)
     }
