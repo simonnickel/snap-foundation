@@ -13,3 +13,9 @@ Contains basic extensions for Swift and Foundation.
 
 [documentation]: https://swiftpackageindex.com/simonnickel/snap-foundation/main/documentation/snapfoundation
 [documentation badge]: https://img.shields.io/badge/Documentation-DocC-blue
+
+This package is home to a variety of things:
+ - Convenience extensions
+ - SwiftUI multi-platform support
+ - Compatibility between SwiftUI, UIKit and AppKit
+
