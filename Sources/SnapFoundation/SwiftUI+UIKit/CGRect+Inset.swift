@@ -6,7 +6,7 @@
 import Foundation
 import SwiftUI
 
-extension CGRect {
+public extension CGRect {
 
     /// A pure SwiftUI implemenation following the UIKit (UIEdgeInset) variant.
     /// Adjusts a rectangle by the given edge insets.

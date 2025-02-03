@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-extension EdgeInsets {
+public extension EdgeInsets {
 
     /// Convenience init to set `0` on all sides.
     static var zero: Self { .init(top: 0, leading: 0, bottom: 0, trailing: 0) }
@@ -31,7 +31,7 @@ extension EdgeInsets {
 
 import UIKit
 
-extension EdgeInsets {
+public extension EdgeInsets {
     
     /// Converted into `UIKit.UIEdgeInsets` using the `characterDirection` of current locale to map leading/trailing to left/right.
     var uiEdgeInsetsFollowingHorizontalDirection: UIEdgeInsets {
