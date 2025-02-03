@@ -9,6 +9,10 @@ extension EdgeInsets {
     
     static var zero: Self { .init(top: 0, leading: 0, bottom: 0, trailing: 0) }
     
+    init(_ value: CGFloat) {
+        self.init(top: value, leading: value, bottom: value, trailing: value)
+    }
+    
     init(horizontal: CGFloat, vertical: CGFloat) {
         self.init(top: vertical, leading: horizontal, bottom: vertical, trailing: horizontal)
     }

@@ -18,6 +18,15 @@ func testConvenvienceInitZero() async throws {
     #expect(insetZero.bottom == 0)
 }
 
+@Test("EdgeInset convenience init .zero")
+func testConvenvienceInitValue() async throws {
+    let insetZero = EdgeInsets(1)
+    #expect(insetZero.top == 1)
+    #expect(insetZero.leading == 1)
+    #expect(insetZero.trailing == 1)
+    #expect(insetZero.bottom == 1)
+}
+
 @Test("EdgeInset convenience init horizontal/vertical axis")
 func testConvenvienceInitAxis() async throws {
     let insetZero = EdgeInsets(horizontal: 1, vertical: 2)
