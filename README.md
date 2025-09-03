@@ -18,4 +18,3 @@ This package is home to a variety of things:
  - Convenience extensions
  - SwiftUI multi-platform support
  - Compatibility between SwiftUI, UIKit and AppKit
-
