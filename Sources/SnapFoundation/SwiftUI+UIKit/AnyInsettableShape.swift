@@ -7,7 +7,7 @@ import SwiftUI
 
 /// A type-erased `InsettableShape` wrapper.
 ///
-/// TODO FB19669133: Does crash when using it with `ContainerRelativeShape()` for `.containerShape()`: `.containerShape(AnyInsettableShape(ContainerRelativeShape()))`.
+/// FB19669133: Does crash when using it with `ContainerRelativeShape()` for `.containerShape()`: `.containerShape(AnyInsettableShape(ContainerRelativeShape()))`.
 public struct AnyInsettableShape: InsettableShape {
     
     let shape: any InsettableShape
@@ -41,7 +41,7 @@ public struct AnyInsettableShape: InsettableShape {
         }
         .frame(maxWidth: .infinity)
         .background(.yellow)
-        // TODO FB19669133: Using `AnyInsettableShape` with ContainerRelativeShape() for .containerShape crashes.
+        // FB19669133: Using `AnyInsettableShape` with ContainerRelativeShape() for .containerShape crashes.
         //        .containerShape(AnyInsettableShape(ContainerRelativeShape()))
         .containerShape(ContainerRelativeShape())
     }
