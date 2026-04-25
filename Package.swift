@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.3
 
 import PackageDescription
 
@@ -21,5 +21,4 @@ let package = Package(
             dependencies: ["SnapFoundation"]
         ),
     ],
-    swiftLanguageModes: [.version("6")]
 )
