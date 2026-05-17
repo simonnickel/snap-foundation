@@ -7,7 +7,9 @@
 
 # SnapFoundation
 
-Contains basic extensions for Swift and Foundation.
+Extensions for Swift, Foundation, OSLog, SwiftUI and UIKit.
+
+**Platforms:** iOS 16+, macOS 15+ · **Dependencies:** none
 
 [![Documentation][documentation badge]][documentation] 
 
