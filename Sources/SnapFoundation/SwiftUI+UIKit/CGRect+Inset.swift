@@ -8,7 +8,7 @@ import SwiftUI
 
 public extension CGRect {
 
-    /// A pure SwiftUI implemenation following the UIKit (UIEdgeInset) variant.
+    /// A pure SwiftUI implementation following the UIKit (UIEdgeInset) variant.
     /// Adjusts a rectangle by the given edge insets.
     /// 
     /// This inline function increments the origin of rect and decrements the size of rect by applying the appropriate member values of the UIEdgeInsets structure.

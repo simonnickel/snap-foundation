@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-// For some reason it's crashing when adding `: @retroactive CustomStringConvertible`.
+// Conforming `@retroactive CustomStringConvertible` causes a crash; expose `description` as a plain property instead.
 extension Font.Design {
     public var description: String {
         "\(self)"

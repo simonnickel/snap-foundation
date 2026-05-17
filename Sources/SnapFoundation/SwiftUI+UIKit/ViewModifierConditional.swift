@@ -14,7 +14,7 @@ import SwiftUI
 
 public extension View {
 	
-	///	Be careful, this does not maintain view identify (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
+	///	Be careful, this does not maintain view identity (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
 	///
 	/// Applies the transform if the condition evaluates to `true`.
 	/// - Parameters:
@@ -44,7 +44,7 @@ public extension View {
 
 public extension View {
 	
-	///	Be careful, this does not maintain view identify (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
+	///	Be careful, this does not maintain view identity (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
 	///
 	/// Applies the transform if the condition evaluates to `true`, applies the else transform otherwise.
 	/// - Parameters:
@@ -77,7 +77,7 @@ public extension View {
 
 public extension View {
 	
-	///	Be careful, this does not maintain view identify (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
+	///	Be careful, this does not maintain view identity (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
 	///
 	/// Unwraps the optional and applies the transform using the unwrapped value.
 	/// - Parameters:
@@ -107,12 +107,12 @@ public extension View {
 
 public extension View {
 	
-	///	Be careful, this does not maintain view identify (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
+	///	Be careful, this does not maintain view identity (see: https://www.objc.io/blog/2021/08/24/conditional-view-modifiers/ ).
 	///
 	/// Unwraps the optional and applies the transform using the unwrapped value, applies the else transform if the optional has no value.
 	/// - Parameters:
 	///   - unwrap: The optional to unwrap.
-	///   - transform: The transform to apply to the source `View`, if the optinal has a value.
+	///   - transform: The transform to apply to the source `View`, if the optional has a value.
 	///   - else: Optional transform to apply to the source `View`, if the optional does NOT have a value.
 	/// - Returns: The modified `View`.
 	///
