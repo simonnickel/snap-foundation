@@ -24,7 +24,7 @@ func testCGSizeAddedWidth() async throws {
     #expect(size == CGSize(width: 110, height: 100))
 }
 
-@Test("CGSize adjusted height")
+@Test("CGSize added height")
 func testCGSizeAddedHeight() async throws {
     let size = CGSize(width: 100, height: 100).added(height: 10)
     #expect(size == CGSize(width: 100, height: 110))

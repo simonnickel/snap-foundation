@@ -10,7 +10,7 @@ import SwiftUI
 @testable import SnapFoundation
 
 @Test("EdgeInset convenience init .zero")
-func testConvenvienceInitZero() async throws {
+func testConvenienceInitZero() async throws {
     let insetZero = EdgeInsets.zero
     #expect(insetZero.top == 0)
     #expect(insetZero.leading == 0)
@@ -18,8 +18,8 @@ func testConvenvienceInitZero() async throws {
     #expect(insetZero.bottom == 0)
 }
 
-@Test("EdgeInset convenience init .zero")
-func testConvenvienceInitValue() async throws {
+@Test("EdgeInset convenience init value")
+func testConvenienceInitValue() async throws {
     let insetZero = EdgeInsets(1)
     #expect(insetZero.top == 1)
     #expect(insetZero.leading == 1)
@@ -28,7 +28,7 @@ func testConvenvienceInitValue() async throws {
 }
 
 @Test("EdgeInset convenience init horizontal/vertical axis")
-func testConvenvienceInitAxis() async throws {
+func testConvenienceInitAxis() async throws {
     let insetZero = EdgeInsets(horizontal: 1, vertical: 2)
     #expect(insetZero.top == 2)
     #expect(insetZero.leading == 1)
