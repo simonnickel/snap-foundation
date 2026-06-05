@@ -31,6 +31,14 @@ import Testing
     #expect(arrayUnique == arrayAppended)
 }
 
+@Test func arrayAppendUniquePreservesExistingDuplicates() {
+    // appendUnique does not clean up duplicates already in the array
+    var arrayWithDuplicates: [String] = ["Value 1", "Value 1", "Value 2"]
+    arrayWithDuplicates.appendUnique("Value 2")
+    #expect(arrayWithDuplicates.count == 3)
+    #expect(arrayWithDuplicates == ["Value 1", "Value 1", "Value 2"])
+}
+
 @Test func arrayAppendedUnique() {
     let arrayUnique: [String] = ["Value 1", "Value 2"]
     let arrayDuplicates: [String] = ["Value 1", "Value 1", "Value 2", "Value 2", "Value 3"]

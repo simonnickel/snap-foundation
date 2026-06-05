@@ -17,3 +17,11 @@ import Testing
     #expect(someSet != someSetInserted)
     #expect(someSet != someSetInsertedMultiple)
 }
+
+@Test func setInsertedDuplicate() {
+    let someSet: Set<String> = ["Value 1"]
+    let someSetInserted = someSet.inserted("Value 1")
+
+    #expect(someSetInserted.count == 1)
+    #expect(someSetInserted == someSet)
+}
