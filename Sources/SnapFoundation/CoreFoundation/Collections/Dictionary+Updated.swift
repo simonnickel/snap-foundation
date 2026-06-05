@@ -7,7 +7,7 @@ import Foundation
 
 extension Dictionary {
     
-    func updated(key: Key, with value: Value) -> Self {
+    public func updated(key: Key, with value: Value) -> Self {
         var copy = self
         copy[key] = value
         return copy
