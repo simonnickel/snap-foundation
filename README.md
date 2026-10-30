@@ -9,8 +9,6 @@
 
 Extensions for Swift, Foundation, OSLog, SwiftUI and UIKit.
 
-**Platforms:** iOS 16+, macOS 15+ · **Dependencies:** none
-
 [![Documentation][documentation badge]][documentation] 
 
 [documentation]: https://swiftpackageindex.com/simonnickel/snap-foundation/main/documentation/snapfoundation
@@ -20,3 +18,10 @@ This package is home to a variety of things:
  - Convenience extensions
  - SwiftUI multi-platform support
  - Compatibility between SwiftUI, UIKit and AppKit
+
+
+## Requirements
+
+- iOS 16+, macOS 15+
+- Swift 6.3
+- Dependencies: none
