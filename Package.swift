@@ -3,22 +3,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "snap-foundation",
+	name: "snap-foundation",
 	platforms: [
-		.iOS(.v16), .macOS(.v15)
+		.iOS(.v16), .macOS(.v15),
 	],
-    products: [
-        .library(
-            name: "SnapFoundation",
-            targets: ["SnapFoundation"]),
-	],
-    targets: [
-        .target(
-            name: "SnapFoundation"
+	products: [
+		.library(
+			name: "SnapFoundation",
+			targets: ["SnapFoundation"],
 		),
-        .testTarget(
-            name: "SnapFoundationTests",
-            dependencies: ["SnapFoundation"]
-        ),
-    ],
+	],
+	targets: [
+		.target(
+			name: "SnapFoundation",
+		),
+		.testTarget(
+			name: "SnapFoundationTests",
+			dependencies: ["SnapFoundation"],
+		),
+	],
 )
